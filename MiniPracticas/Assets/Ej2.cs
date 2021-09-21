@@ -22,7 +22,6 @@ public class Ej2 : MonoBehaviour
             Valor = x++;
         }
 
-        
             print("El contador llego a su fin, el resultado fue " + Valor);
         
 

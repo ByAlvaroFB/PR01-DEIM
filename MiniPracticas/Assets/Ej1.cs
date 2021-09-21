@@ -5,7 +5,7 @@ using UnityEngine;
 public class Ej1 : MonoBehaviour
 {
 
-    private string nombre = "Profe";
+    [SerializeField] string nombre = "Profe";
     private int nota01 = 5;
     private int nota02 = 5;
     private int notafinal;
