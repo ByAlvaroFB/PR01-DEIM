@@ -29,7 +29,7 @@ public class Ej3 : MonoBehaviour
 
         if(resultado < RandomNumber)
         {
-            print("Error");
+            print("Error = " + RandomNumber);
 
         }
 
