@@ -6,7 +6,9 @@ public class Ej31 : MonoBehaviour
 {
     public bool State = false;
     public int Minutos;
+    public int Horas;
     public int x = 1;
+    public int y = 1;
 
     // Start is called before the first frame update
     void Start()
@@ -28,6 +30,13 @@ public class Ej31 : MonoBehaviour
             State = false;
         }
 
+        if (Minutos >= 60)
+        {
+            Horas = y++;
+            x = 1;
+            Minutos = 0;
+        }
+
     }
 
     IEnumerator Cronometro()
@@ -37,7 +46,7 @@ public class Ej31 : MonoBehaviour
             int segundos;
             segundos = n;
             yield return new WaitForSeconds(1f);
-            print("Minutos: " + Minutos + " Segundos: " + segundos);
+            print("Horas " + Horas + " Minutos: " + Minutos + " Segundos: " + segundos);
 
             if (segundos >= 60)
             {
