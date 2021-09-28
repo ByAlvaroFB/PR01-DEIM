@@ -6,32 +6,34 @@ public class Ej3 : MonoBehaviour
 {
 
     private float Var;
-    bool state;
-    bool state1;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        Var = Multi(6, 0);
+
+        Var = Multi(2, 0);
         print("El resultado es: " + Var);
 
     }
 
     // Update is called once per frame
 
-    float Multi(int num1, int num2)
+    float Multi( int num1, int num2)
     {
+        int RandomNumber = Random.Range(1, 20);
+
         int resultado;
 
         resultado = num1 + num2;
 
-        if(resultado < 5)
+        if(resultado < RandomNumber)
         {
             print("Error");
 
         }
 
-        if(resultado > 5)
+        if(resultado > RandomNumber)
         {
             print("Aceptado");
         }
