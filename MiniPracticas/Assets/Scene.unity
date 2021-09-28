@@ -324,11 +324,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564071904}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ea123f25b6871f4aaf0d9526854da2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  State: 0
+  Minutos: 0
+  Horas: 0
+  x: 1
+  y: 1
 --- !u!114 &1564071911
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -349,7 +354,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1564071904}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0f6b4d17957032d449585bd00188e012, type: 3}
   m_Name: 
